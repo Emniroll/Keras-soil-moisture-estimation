@@ -103,7 +103,7 @@ def my_generator(a, b, batch_size):
 
 batch_size = 8
 model = model_build()
-input1, input2, label1, label2 = data_utils(1000)
+input1, input2, label1, label2 = data_utils(1000)  # random_seeds
 model.compile(loss=huber_loss, optimizer="adam")
 checkpoint = ModelCheckpoint(r"best_weights.h5", monitor='val_loss',
                              save_weights_only=True, verbose=1, save_best_only=True, period=1)
