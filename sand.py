@@ -2,13 +2,13 @@ from __future__ import print_function
 
 import os
 
+import keras
 import numpy as np
 import tensorflow as tf
 from PIL import Image
-import keras
 from keras import Input, Model
-from keras.callbacks import ModelCheckpoint, Callback
-from keras.layers import BatchNormalization, warnings
+from keras.callbacks import ModelCheckpoint
+from keras.layers import BatchNormalization
 from keras.layers import Conv2D
 from keras.layers import Dense, Dropout, Flatten
 from keras.layers import MaxPool2D
